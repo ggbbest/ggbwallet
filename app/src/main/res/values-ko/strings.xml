@@ -18,7 +18,7 @@
     <string name="error_import">키 저장소를 가져오는 중 오류 발생</string>
     <string name="error_deleting_account">지갑 삭제 오류</string>
     <string name="do_manage_make_backup">백업에 성공했습니까?</string>
-    <string name="yes_continue">예, 계속합니다.</string>CustomViewSettings
+    <string name="yes_continue">예, 계속합니다.</string>
     <string name="no_repeat">아니요, 다시</string>
     <string name="transfer">옮기다 %s</string>
     <string name="action_buy">구입 %s</string>
