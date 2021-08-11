@@ -35,10 +35,10 @@ android {
         }
     }
     defaultConfig {
-        versionCode 163
-        versionName "3.35.1"
+        versionCode 1
+        versionName "21.08.11"
 
-        applicationId "io.stormbird.wallet"
+        applicationId "io.ggb.wallet"
         minSdkVersion 23
         targetSdkVersion 30
         testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
