@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/GgbWallet/alpha-wallet-android.git"
+    "url": "git+https://github.com/ggbbest/ggbwallet.git"
   },
   "author": "",
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/GgbWallet/alpha-wallet-android/issues"
+    "url": "https://github.com/ggbbest/ggbwallet/issues"
   },
-  "homepage": "https://github.com/GgbWallet/alpha-wallet-android#readme",
+  "homepage": "https://github.com/ggbbest/ggbwallet#readme",
   "dependencies": {
     "normalize.css": "^8.0.0"
   }

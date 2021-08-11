@@ -427,7 +427,7 @@
     <string name="select_active_networks">设置启用的区块链</string>
     <string name="collectibles">收藏品</string>
     <string name="token_function">通证功能</string>
-    <string name="channel_description">Alphawallet 通知渠道</string>
+    <string name="channel_description">Ggbwallet 通知渠道</string>
     <string name="error_camera_permission_denied">相机使用权限遭拒。</string>
     <string name="confirm_tokenscript_transaction">确认 TokenScript 交易</string>
     <string name="tokenscript_send_native">发送%1$s %2$s至%3$s (%4$s)</string>

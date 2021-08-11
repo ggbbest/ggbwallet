@@ -345,7 +345,7 @@
     <string name="new_version">Version update is available on the GgbWallet website.</string>
     <string name="confirm_update">Download and Install</string>
     <string name="dialog_later">Later</string>
-    <string name="ggbwallet_update">Alphawallet update</string>
+    <string name="ggbwallet_update">Ggbwallet update</string>
     <string name="install_error">Unable to update App</string>
     <string name="require_write_permission">Storage write permission not given.</string>
     <string name="dialog_not_again">Skip until next release</string>
@@ -443,7 +443,7 @@
     <string name="select_active_networks">Select Active Networks</string>
     <string name="collectibles">Collectibles</string>
     <string name="token_function">Token Function</string>
-    <string name="channel_description">Alphawallet notification channel</string>
+    <string name="channel_description">Ggbwallet notification channel</string>
     <string name="error_camera_permission_denied">Permission to use the camera was denied.</string>
     <string name="confirm_tokenscript_transaction">Confirm TokenScript Transaction</string>
     <string name="tokenscript_send_native">Send %1$s %2$s to %3$s (%4$s)</string>

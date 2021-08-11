@@ -342,7 +342,7 @@
     <string name="new_version">Mise à jour de la version disponible sur le site GgbWallet.</string>
     <string name="confirm_update">Télécharger et Installer</string>
     <string name="dialog_later">Plus tard</string>
-    <string name="ggbwallet_update">Mise à jour Alphawallet </string>
+    <string name="ggbwallet_update">Mise à jour Ggbwallet </string>
     <string name="install_error">Mise à jour impossible</string>
     <string name="require_write_permission">L\'autorisation d\'écriture de stockage n\'est pas donnée.</string>
     <string name="dialog_not_again">Passer jusqu\'à la prochaine version</string>
@@ -440,7 +440,7 @@
     <string name="select_active_networks">Selectionner Réseaux Actifs</string>
     <string name="collectibles">Objects de Collections</string>
     <string name="token_function">Fonctions du Token</string>
-    <string name="channel_description">Chaine de notifications Alphawallet</string>
+    <string name="channel_description">Chaine de notifications Ggbwallet</string>
     <string name="error_camera_permission_denied">La permission d\'utiliser la caméra a été refusée</string>
     <string name="confirm_tokenscript_transaction">Confirmer la transaction TokenScript</string>
     <string name="tokenscript_send_native">Envoyer %1$s %2$s to %3$s (%4$s)</string>

@@ -599,7 +599,7 @@ public class HomeActivity extends BaseNavigationActivity implements View.OnClick
                 AWalletConfirmationDialog cDialog = new AWalletConfirmationDialog(this);
                 cDialog.setTitle(R.string.ggbwallet_update);
                 cDialog.setCancelable(true);
-                cDialog.setSmallText("Using an old version of Alphawallet. Please update from the Play Store or Alphawallet website.");
+                cDialog.setSmallText("Using an old version of Ggbwallet. Please update from the Play Store or Ggbwallet website.");
                 cDialog.setPrimaryButtonText(R.string.ok);
                 cDialog.setPrimaryButtonListener(v -> {
                     cDialog.dismiss();
