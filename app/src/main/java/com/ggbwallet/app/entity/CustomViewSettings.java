@@ -35,6 +35,7 @@ public class CustomViewSettings
             //EthereumNetworkBase.XDAI_ID,
             //EthereumNetworkBase.RINKEBY_ID, //You can mix testnets and mainnets, but probably shouldn't as it may result in people getting scammed
             //EthereumNetworkBase.GOERLI_ID
+            BINANCE_MAIN_ID
     );
 
     //TODO: Wallet can only show the above tokens
