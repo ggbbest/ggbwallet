@@ -3,6 +3,7 @@ package com.ggbwallet.app.entity;
 import com.ggbwallet.app.C;
 import com.ggbwallet.app.entity.tokens.Token;
 import com.ggbwallet.app.entity.tokens.TokenInfo;
+import com.ggbwallet.ethereum.EthereumNetworkBase;
 
 import java.util.Arrays;
 import java.util.List;
@@ -35,6 +36,7 @@ public class CustomViewSettings
             //EthereumNetworkBase.XDAI_ID,
             //EthereumNetworkBase.RINKEBY_ID, //You can mix testnets and mainnets, but probably shouldn't as it may result in people getting scammed
             //EthereumNetworkBase.GOERLI_ID
+            EthereumNetworkBase.MAINNET_ID,
             BINANCE_MAIN_ID
     );
 

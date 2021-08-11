@@ -507,7 +507,7 @@
     <string name="password_6_characters_or_more">비밀번호 6자 이상</string>
     <string name="create_a_new_wallet">새 지갑 만들기</string>
     <string name="watch">보다</string>
-    <string name="already_have_a_wallet">나는 이미 지갑을 가지고 있다:</string>
+    <string name="already_have_a_wallet">지갑 가져오기:</string>
     <string name="watch_wallet">보기 전용 지갑</string>
     <string name="suggestion_address">이더리움 주소 입력</string>
     <string name="ethereum_address_hint">이더리움 주소: 0x 다음 0–9 a-f A-F의 40자</string>
@@ -542,7 +542,7 @@
     <string name="too_many_fails">너무 많은 지문이 실패합니다. PIN을 사용하거나 30초 동안 기다립니다.</string>
     <string name="no_fingerprint_enrolled">지문이 등록되지 않았습니다. PIN 사용</string>
     <string name="cannot_process_fingerprint">지문을 처리할 수 없습니다. PIN 사용</string>
-    <string name="action_receive">받다</string>
+    <string name="action_receive">받기</string>
     <string name="tokenscript_error">TokenScript 요소 오류</string>
     <string name="tokenscript_error_detail">TokenScript 요소의 오류: %1$s</string>
     <string name="tokenscript_element_not_present">기능 입력 \'%1$s\' HTML 요소에서 찾을 수 없음.</string>
