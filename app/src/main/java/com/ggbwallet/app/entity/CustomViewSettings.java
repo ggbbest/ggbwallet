@@ -26,6 +26,8 @@ public class CustomViewSettings
             //new TokenInfo("0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48", "USD Coin", "USDC", 6, true, EthereumNetworkBase.MAINNET_ID),
             //new TokenInfo("0x6C8c6b02E7b2BE14d4fA6022Dfd6d75921D90E4E", "Compound BAT", "CBAT", 8, true, EthereumNetworkBase.MAINNET_ID)
             new TokenInfo("0x368aB5E3330746974a8e221F29ef8a71eC074242", "GoodGameBe", "GGB", 18, true, BINANCE_MAIN_ID)
+            ,new TokenInfo("0xF99aCcabD9121F9E584fBae833D84d25B5b97B6b", "Citi", "CITI", 18, true, BINANCE_MAIN_ID)
+            ,new TokenInfo("0x7eE157aE4eaCD73df4fCB996AC798D1661115fbe", "CitypayOrg", "CTP", 18, true, BINANCE_MAIN_ID)
     );
 
     //List of chains that wallet can show
