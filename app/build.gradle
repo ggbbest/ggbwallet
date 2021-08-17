@@ -35,8 +35,8 @@ android {
         }
     }
     defaultConfig {
-        versionCode 2
-        versionName "21.08.17"
+        versionCode 3
+        versionName "21.08.17.01"
 
         applicationId "io.ggb.wallet"
         minSdkVersion 23
