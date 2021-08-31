@@ -40,6 +40,7 @@ import static com.ggbwallet.ethereum.EthereumNetworkBase.AVALANCHE_ID;
 import static com.ggbwallet.ethereum.EthereumNetworkBase.AVALANCHE_RPC_URL;
 import static com.ggbwallet.ethereum.EthereumNetworkBase.BINANCE_MAIN_ID;
 import static com.ggbwallet.ethereum.EthereumNetworkBase.BINANCE_TEST_ID;
+import static com.ggbwallet.ethereum.EthereumNetworkBase.C4EI_MAIN_ID;
 import static com.ggbwallet.ethereum.EthereumNetworkBase.CLASSIC_ID;
 import static com.ggbwallet.ethereum.EthereumNetworkBase.CRONOS_TEST_ID;
 import static com.ggbwallet.ethereum.EthereumNetworkBase.FANTOM_ID;
@@ -93,6 +94,8 @@ public abstract class EthereumNetworkBase implements EthereumNetworkRepositoryTy
     //If you supply a main RPC and secondary it will try the secondary if the primary node times out after 10 seconds.
     //See the declaration of NetworkInfo - it has a member backupNodeUrl. Put your secondary node here.
 
+    public static final String C4EI_MAIN_RPC_URL = "http://112.157.65.160:8545";
+    public static final String C4EI_MAIN_FALLBACK_RPC_URL = "http://112.157.65.160:8545"; //????
     public static final String BACKUP_INFURA_KEY = getSecondaryInfuraKey();
     public static final String MAINNET_FALLBACK_RPC_URL = "https://mainnet.infura.io/v3/" + getSecondaryInfuraKey();
     public static final String CLASSIC_RPC_URL = "https://www.ethercluster.com/etc";
@@ -126,7 +129,7 @@ public abstract class EthereumNetworkBase implements EthereumNetworkRepositoryTy
 
     //This optional list creates a defined order in which tokens are displayed
     static final int[] orderList = {
-            BINANCE_MAIN_ID, MAINNET_ID, CLASSIC_ID, XDAI_ID, POA_ID, ARTIS_SIGMA1_ID, KOVAN_ID, ROPSTEN_ID, SOKOL_ID,
+            C4EI_MAIN_ID, BINANCE_MAIN_ID, MAINNET_ID, CLASSIC_ID, XDAI_ID, POA_ID, ARTIS_SIGMA1_ID, KOVAN_ID, ROPSTEN_ID, SOKOL_ID,
             RINKEBY_ID, GOERLI_ID, ARTIS_TAU1_ID, BINANCE_TEST_ID, HECO_ID, HECO_TEST_ID,
             AVALANCHE_ID, FUJI_TEST_ID, FANTOM_ID, FANTOM_TEST_ID, MATIC_ID, MATIC_TEST_ID, OPTIMISTIC_MAIN_ID,
             OPTIMISTIC_TEST_ID, CRONOS_TEST_ID
@@ -134,6 +137,11 @@ public abstract class EthereumNetworkBase implements EthereumNetworkRepositoryTy
 
     static final Map<Integer, NetworkInfo> networkMap = new HashMap<Integer, NetworkInfo>() {
         {
+            put(C4EI_MAIN_ID, new NetworkInfo(C.C4EI_MAIN_NETWORK, C.C4EI_SYMBOL,
+                    C4EI_MAIN_RPC_URL,
+                    "https://exp.c4ei.net/tx/", C4EI_MAIN_ID,
+                    C4EI_MAIN_FALLBACK_RPC_URL, "https://api.bscscan.com/api?"));
+
             put(BINANCE_MAIN_ID, new NetworkInfo(C.BINANCE_MAIN_NETWORK, C.BINANCE_SYMBOL,
                     BINANCE_MAIN_RPC_URL,
                     "https://bscscan.com/tx/", BINANCE_MAIN_ID,

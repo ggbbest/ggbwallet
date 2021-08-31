@@ -8,6 +8,7 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 
 public abstract class EthereumNetworkBase { // implements EthereumNetworkRepositoryType
+    public static final int C4EI_MAIN_ID = 21004;
     public static final int BINANCE_MAIN_ID = 56;
     public static final int BINANCE_TEST_ID = 97;
     public static final int MAINNET_ID = 1;
@@ -33,6 +34,7 @@ public abstract class EthereumNetworkBase { // implements EthereumNetworkReposit
     public static final int OPTIMISTIC_TEST_ID = 69;
     public static final int CRONOS_TEST_ID = 338;
 
+    public static final String C4EI_MAIN_RPC_URL = "http://112.157.65.160:8545";
     public static final String BINANCE_TEST_RPC_URL = "https://data-seed-prebsc-1-s3.binance.org:8545";
     public static final String BINANCE_MAIN_RPC_URL = "https://bsc-dataseed.binance.org";
     public static final String MAINNET_RPC_URL = "https://mainnet.infura.io/v3/da3717f25f824cc1baa32d812386d93f";
@@ -60,6 +62,8 @@ public abstract class EthereumNetworkBase { // implements EthereumNetworkReposit
   
     static Map<Integer, NetworkInfo> networkMap = new LinkedHashMap<Integer, NetworkInfo>() {
         {
+            put(C4EI_MAIN_ID, new NetworkInfo("C4EI (C4EI)", "C4EI", C4EI_MAIN_RPC_URL, "https://exp.c4ei.net/smart/tx/",
+                    C4EI_MAIN_ID));
             put(BINANCE_MAIN_ID, new NetworkInfo("Binance (BSC)", "BNB", BINANCE_MAIN_RPC_URL, "https://explorer.binance.org/smart/tx/",
                     BINANCE_MAIN_ID));
             put(BINANCE_TEST_ID, new NetworkInfo("BSC TestNet (Test)", "BNB", BINANCE_TEST_RPC_URL, "https://explorer.binance.org/smart-testnet/tx/",

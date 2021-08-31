@@ -32,6 +32,7 @@ public abstract class C {
     public static final String ARTIS_TAU1_NETWORK = "ARTIS tau1 (Test)";
     public static final String BINANCE_TEST_NETWORK = "BSC TestNet";
     public static final String BINANCE_MAIN_NETWORK = "Binance (BSC)";
+    public static final String C4EI_MAIN_NETWORK = "C4EI (C4EI)";
     public static final String HECO_MAIN_NETWORK = "Heco";
     public static final String HECO_TEST_NETWORK = "Heco (Test)";
     public static final String FANTOM_NETWORK = "Fantom Opera";
@@ -62,6 +63,7 @@ public abstract class C {
     public static final String ARTIS_SIGMA1_SYMBOL = "ATS";
     public static final String ARTIS_TAU1_SYMBOL = "ATS";
     public static final String BINANCE_SYMBOL = "BNB";
+    public static final String C4EI_SYMBOL = "C4EI";
     public static final String HECO_SYMBOL = "HT";
     public static final String FANTOM_SYMBOL = "FTM";
     public static final String AVALANCHE_SYMBOL = "AVAX";
