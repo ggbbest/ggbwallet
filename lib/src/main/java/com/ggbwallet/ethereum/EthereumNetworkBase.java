@@ -34,10 +34,10 @@ public abstract class EthereumNetworkBase { // implements EthereumNetworkReposit
     public static final int OPTIMISTIC_TEST_ID = 69;
     public static final int CRONOS_TEST_ID = 338;
 
+    public static final String MAINNET_RPC_URL = "https://mainnet.infura.io/v3/da3717f25f824cc1baa32d812386d93f";
     public static final String C4EI_MAIN_RPC_URL = "http://112.157.65.160:8545";
     public static final String BINANCE_TEST_RPC_URL = "https://data-seed-prebsc-1-s3.binance.org:8545";
     public static final String BINANCE_MAIN_RPC_URL = "https://bsc-dataseed.binance.org";
-    public static final String MAINNET_RPC_URL = "https://mainnet.infura.io/v3/da3717f25f824cc1baa32d812386d93f";
     public static final String CLASSIC_RPC_URL = "https://www.ethercluster.com/etc";
     public static final String XDAI_RPC_URL = "https://rpc.xdaichain.com";
     public static final String POA_RPC_URL = "https://core.poa.network/";
@@ -62,14 +62,14 @@ public abstract class EthereumNetworkBase { // implements EthereumNetworkReposit
   
     static Map<Integer, NetworkInfo> networkMap = new LinkedHashMap<Integer, NetworkInfo>() {
         {
+            put(MAINNET_ID, new NetworkInfo("Ethereum", "ETH", MAINNET_RPC_URL, "https://etherscan.io/tx/",
+                    MAINNET_ID));
             put(C4EI_MAIN_ID, new NetworkInfo("C4EI (C4EI)", "C4EI", C4EI_MAIN_RPC_URL, "https://exp.c4ei.net/smart/tx/",
                     C4EI_MAIN_ID));
             put(BINANCE_MAIN_ID, new NetworkInfo("Binance (BSC)", "BNB", BINANCE_MAIN_RPC_URL, "https://explorer.binance.org/smart/tx/",
                     BINANCE_MAIN_ID));
             put(BINANCE_TEST_ID, new NetworkInfo("BSC TestNet (Test)", "BNB", BINANCE_TEST_RPC_URL, "https://explorer.binance.org/smart-testnet/tx/",
                     BINANCE_TEST_ID));
-            put(MAINNET_ID, new NetworkInfo("Ethereum", "ETH", MAINNET_RPC_URL, "https://etherscan.io/tx/",
-                    MAINNET_ID));
             put(CLASSIC_ID, new NetworkInfo("Ethereum Classic", "ETC", CLASSIC_RPC_URL, "https://blockscout.com/etc/mainnet/tx/",
                     CLASSIC_ID));
             put(XDAI_ID, new NetworkInfo("xDAI", "xDAI", XDAI_RPC_URL, "https://blockscout.com/xdai/mainnet/tx/",

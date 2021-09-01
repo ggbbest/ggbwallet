@@ -8,6 +8,7 @@ import com.ggbwallet.ethereum.EthereumNetworkBase;
 import java.util.Arrays;
 import java.util.List;
 
+//import static com.ggbwallet.ethereum.EthereumNetworkBase.C4EI_MAIN_ID;
 import static com.ggbwallet.ethereum.EthereumNetworkBase.BINANCE_MAIN_ID;
 import static com.ggbwallet.ethereum.EthereumNetworkBase.MAINNET_ID;
 
@@ -39,7 +40,8 @@ public class CustomViewSettings
             //EthereumNetworkBase.RINKEBY_ID, //You can mix testnets and mainnets, but probably shouldn't as it may result in people getting scammed
             //EthereumNetworkBase.GOERLI_ID
             EthereumNetworkBase.MAINNET_ID,
-            BINANCE_MAIN_ID
+            EthereumNetworkBase.C4EI_MAIN_ID,
+            EthereumNetworkBase.BINANCE_MAIN_ID
     );
 
     //TODO: Wallet can only show the above tokens

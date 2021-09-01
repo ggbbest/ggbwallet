@@ -34,13 +34,13 @@ import java.util.Set;
 
 import io.reactivex.Single;
 
+import static com.ggbwallet.ethereum.EthereumNetworkBase.BINANCE_MAIN_ID;
+import static com.ggbwallet.ethereum.EthereumNetworkBase.BINANCE_TEST_ID;
+import static com.ggbwallet.ethereum.EthereumNetworkBase.C4EI_MAIN_ID;
 import static com.ggbwallet.ethereum.EthereumNetworkBase.ARTIS_SIGMA1_ID;
 import static com.ggbwallet.ethereum.EthereumNetworkBase.ARTIS_TAU1_ID;
 import static com.ggbwallet.ethereum.EthereumNetworkBase.AVALANCHE_ID;
 import static com.ggbwallet.ethereum.EthereumNetworkBase.AVALANCHE_RPC_URL;
-import static com.ggbwallet.ethereum.EthereumNetworkBase.BINANCE_MAIN_ID;
-import static com.ggbwallet.ethereum.EthereumNetworkBase.BINANCE_TEST_ID;
-import static com.ggbwallet.ethereum.EthereumNetworkBase.C4EI_MAIN_ID;
 import static com.ggbwallet.ethereum.EthereumNetworkBase.CLASSIC_ID;
 import static com.ggbwallet.ethereum.EthereumNetworkBase.CRONOS_TEST_ID;
 import static com.ggbwallet.ethereum.EthereumNetworkBase.FANTOM_ID;
@@ -94,10 +94,14 @@ public abstract class EthereumNetworkBase implements EthereumNetworkRepositoryTy
     //If you supply a main RPC and secondary it will try the secondary if the primary node times out after 10 seconds.
     //See the declaration of NetworkInfo - it has a member backupNodeUrl. Put your secondary node here.
 
+    public static final String MAINNET_FALLBACK_RPC_URL = "https://mainnet.infura.io/v3/" + getSecondaryInfuraKey();
     public static final String C4EI_MAIN_RPC_URL = "http://112.157.65.160:8545";
     public static final String C4EI_MAIN_FALLBACK_RPC_URL = "http://112.157.65.160:8545"; //????
+    public static final String BINANCE_TEST_RPC_URL = "https://data-seed-prebsc-1-s3.binance.org:8545";
+    public static final String BINANCE_TEST_FALLBACK_RPC_URL = "https://data-seed-prebsc-2-s1.binance.org:8545";
+    public static final String BINANCE_MAIN_RPC_URL = "https://bsc-dataseed.binance.org";
+    public static final String BINANCE_MAIN_FALLBACK_RPC_URL = "https://bsc-dataseed2.ninicoin.io:443";
     public static final String BACKUP_INFURA_KEY = getSecondaryInfuraKey();
-    public static final String MAINNET_FALLBACK_RPC_URL = "https://mainnet.infura.io/v3/" + getSecondaryInfuraKey();
     public static final String CLASSIC_RPC_URL = "https://www.ethercluster.com/etc";
     public static final String XDAI_RPC_URL = "https://rpc.xdaichain.com/";
     public static final String POA_RPC_URL = "https://core.poa.network/";
@@ -111,10 +115,6 @@ public abstract class EthereumNetworkBase implements EthereumNetworkRepositoryTy
     public static final String GOERLI_FALLBACK_RPC_URL = "https://goerli.infura.io/v3/" + getSecondaryInfuraKey();
     public static final String ARTIS_SIGMA1_RPC_URL = "https://rpc.sigma1.artis.network";
     public static final String ARTIS_TAU1_RPC_URL = "https://rpc.tau1.artis.network";
-    public static final String BINANCE_TEST_RPC_URL = "https://data-seed-prebsc-1-s3.binance.org:8545";
-    public static final String BINANCE_TEST_FALLBACK_RPC_URL = "https://data-seed-prebsc-2-s1.binance.org:8545";
-    public static final String BINANCE_MAIN_RPC_URL = "https://bsc-dataseed.binance.org";
-    public static final String BINANCE_MAIN_FALLBACK_RPC_URL = "https://bsc-dataseed2.ninicoin.io:443";
     public static final String HECO_RPC_URL = "https://http-mainnet-node.huobichain.com";
     public static final String HECO_TEST_RPC_URL = "https://http-testnet.hecochain.com";
     public static final String OPTIMISTIC_MAIN_URL = "https://optimism-mainnet.infura.io/v3/" + getInfuraKey();

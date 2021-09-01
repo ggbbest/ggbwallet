@@ -20,7 +20,11 @@ public abstract class C {
     public static final int TERMINATE_ACTIVITY = 5;
 
     public static final String ETHEREUM_NETWORK_NAME = "Ethereum";
+    public static final String C4EI_MAIN_NETWORK = "C4EI (C4EI)";
     public static final String CLASSIC_NETWORK_NAME = "Ethereum Classic";
+    public static final String BINANCE_TEST_NETWORK = "BSC TestNet";
+    public static final String BINANCE_MAIN_NETWORK = "Binance (BSC)";
+
     public static final String POA_NETWORK_NAME = "POA";
     public static final String XDAI_NETWORK_NAME = "xDai";
     public static final String KOVAN_NETWORK_NAME = "Kovan (Test)";
@@ -30,9 +34,6 @@ public abstract class C {
     public static final String GOERLI_NETWORK_NAME = "Görli (Test)";
     public static final String ARTIS_SIGMA1_NETWORK = "ARTIS sigma1";
     public static final String ARTIS_TAU1_NETWORK = "ARTIS tau1 (Test)";
-    public static final String BINANCE_TEST_NETWORK = "BSC TestNet";
-    public static final String BINANCE_MAIN_NETWORK = "Binance (BSC)";
-    public static final String C4EI_MAIN_NETWORK = "C4EI (C4EI)";
     public static final String HECO_MAIN_NETWORK = "Heco";
     public static final String HECO_TEST_NETWORK = "Heco (Test)";
     public static final String FANTOM_NETWORK = "Fantom Opera";
@@ -50,6 +51,7 @@ public abstract class C {
     public static final String XDAI_TICKER_NAME = "dai";
     public static final String ARTIS_SIGMA_TICKER = "artis";
     public static final String BINANCE_TICKER = "binance";
+    public static final String C4EI_TICKER = "c4ei";
 
     public static final String ETHEREUM_TICKER = "ethereum";
     public static final String POA_TICKER = "poa";
