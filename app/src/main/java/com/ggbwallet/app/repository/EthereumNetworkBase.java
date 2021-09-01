@@ -129,7 +129,7 @@ public abstract class EthereumNetworkBase implements EthereumNetworkRepositoryTy
 
     //This optional list creates a defined order in which tokens are displayed
     static final int[] orderList = {
-            C4EI_MAIN_ID, BINANCE_MAIN_ID, MAINNET_ID, CLASSIC_ID, XDAI_ID, POA_ID, ARTIS_SIGMA1_ID, KOVAN_ID, ROPSTEN_ID, SOKOL_ID,
+            MAINNET_ID, C4EI_MAIN_ID, BINANCE_MAIN_ID, CLASSIC_ID, XDAI_ID, POA_ID, ARTIS_SIGMA1_ID, KOVAN_ID, ROPSTEN_ID, SOKOL_ID,
             RINKEBY_ID, GOERLI_ID, ARTIS_TAU1_ID, BINANCE_TEST_ID, HECO_ID, HECO_TEST_ID,
             AVALANCHE_ID, FUJI_TEST_ID, FANTOM_ID, FANTOM_TEST_ID, MATIC_ID, MATIC_TEST_ID, OPTIMISTIC_MAIN_ID,
             OPTIMISTIC_TEST_ID, CRONOS_TEST_ID
@@ -137,19 +137,18 @@ public abstract class EthereumNetworkBase implements EthereumNetworkRepositoryTy
 
     static final Map<Integer, NetworkInfo> networkMap = new HashMap<Integer, NetworkInfo>() {
         {
-            put(C4EI_MAIN_ID, new NetworkInfo(C.C4EI_MAIN_NETWORK, C.C4EI_SYMBOL,
-                    C4EI_MAIN_RPC_URL,
-                    "https://exp.c4ei.net/tx/", C4EI_MAIN_ID,
-                    C4EI_MAIN_FALLBACK_RPC_URL, "https://api.c4ei.net/api?"));
-
-            put(BINANCE_MAIN_ID, new NetworkInfo(C.BINANCE_MAIN_NETWORK, C.BINANCE_SYMBOL,
-                    BINANCE_MAIN_RPC_URL,
-                    "https://bscscan.com/tx/", BINANCE_MAIN_ID,
-                    BINANCE_MAIN_FALLBACK_RPC_URL, "https://api.bscscan.com/api?"));
             put(MAINNET_ID, new NetworkInfo(C.ETHEREUM_NETWORK_NAME, C.ETH_SYMBOL,
                     MAINNET_RPC_URL,
                     "https://cn.etherscan.com/tx/", MAINNET_ID,
                     MAINNET_FALLBACK_RPC_URL, "https://api-cn.etherscan.com/api?"));
+            put(C4EI_MAIN_ID, new NetworkInfo(C.C4EI_MAIN_NETWORK, C.C4EI_SYMBOL,
+                    C4EI_MAIN_RPC_URL,
+                    "https://exp.c4ei.net/tx/", C4EI_MAIN_ID,
+                    C4EI_MAIN_FALLBACK_RPC_URL, "https://api.c4ei.net/api?"));
+            put(BINANCE_MAIN_ID, new NetworkInfo(C.BINANCE_MAIN_NETWORK, C.BINANCE_SYMBOL,
+                    BINANCE_MAIN_RPC_URL,
+                    "https://bscscan.com/tx/", BINANCE_MAIN_ID,
+                    BINANCE_MAIN_FALLBACK_RPC_URL, "https://api.bscscan.com/api?"));
             put(CLASSIC_ID, new NetworkInfo(C.CLASSIC_NETWORK_NAME, C.ETC_SYMBOL,
                     CLASSIC_RPC_URL,
                     "https://blockscout.com/etc/mainnet/tx/", CLASSIC_ID, CLASSIC_RPC_URL,
@@ -415,11 +414,12 @@ public abstract class EthereumNetworkBase implements EthereumNetworkRepositoryTy
         switch (chainId)
         {
             case MAINNET_ID:
+            case C4EI_MAIN_ID:
+            case BINANCE_MAIN_ID:
             case POA_ID:
             case CLASSIC_ID:
             case XDAI_ID:
             case ARTIS_SIGMA1_ID:
-            case BINANCE_MAIN_ID:
             case HECO_ID:
             case AVALANCHE_ID:
             case FANTOM_ID:
@@ -445,6 +445,8 @@ public abstract class EthereumNetworkBase implements EthereumNetworkRepositoryTy
         {
             case MAINNET_ID:
                 return R.drawable.ic_token_eth;
+            case C4EI_MAIN_ID:
+                return R.drawable.ic_token_c4ei;
             case KOVAN_ID:
                 return R.drawable.kovan_logo;
             case ROPSTEN_ID:

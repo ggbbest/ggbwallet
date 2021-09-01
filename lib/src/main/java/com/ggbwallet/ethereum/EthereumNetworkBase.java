@@ -8,10 +8,10 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 
 public abstract class EthereumNetworkBase { // implements EthereumNetworkRepositoryType
+    public static final int MAINNET_ID = 1;
     public static final int C4EI_MAIN_ID = 21004;
     public static final int BINANCE_MAIN_ID = 56;
     public static final int BINANCE_TEST_ID = 97;
-    public static final int MAINNET_ID = 1;
     public static final int CLASSIC_ID = 61;
     public static final int POA_ID = 99;
     public static final int KOVAN_ID = 42;
