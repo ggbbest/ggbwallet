@@ -20,7 +20,7 @@ public abstract class C {
     public static final int TERMINATE_ACTIVITY = 5;
 
     public static final String ETHEREUM_NETWORK_NAME = "Ethereum";
-    public static final String C4EI_MAIN_NETWORK = "C4EI (C4EI)";
+    public static final String C4EI_MAIN_NETWORK_NAME = "c4ei.net";
     public static final String CLASSIC_NETWORK_NAME = "Ethereum Classic";
     public static final String BINANCE_TEST_NETWORK = "BSC TestNet";
     public static final String BINANCE_MAIN_NETWORK = "Binance (BSC)";

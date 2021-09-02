@@ -141,7 +141,7 @@ public abstract class EthereumNetworkBase implements EthereumNetworkRepositoryTy
                     MAINNET_RPC_URL,
                     "https://cn.etherscan.com/tx/", MAINNET_ID,
                     MAINNET_FALLBACK_RPC_URL, "https://api-cn.etherscan.com/api?"));
-            put(C4EI_MAIN_ID, new NetworkInfo(C.C4EI_MAIN_NETWORK, C.C4EI_SYMBOL,
+            put(C4EI_MAIN_ID, new NetworkInfo(C.C4EI_MAIN_NETWORK_NAME, C.C4EI_SYMBOL,
                     C4EI_MAIN_RPC_URL,
                     "https://exp.c4ei.net/tx/", C4EI_MAIN_ID,
                     C4EI_MAIN_FALLBACK_RPC_URL, "https://api.c4ei.net/api?"));
