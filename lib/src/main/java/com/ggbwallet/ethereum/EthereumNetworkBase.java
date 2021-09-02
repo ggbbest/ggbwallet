@@ -64,7 +64,7 @@ public abstract class EthereumNetworkBase { // implements EthereumNetworkReposit
         {
             put(MAINNET_ID, new NetworkInfo("Ethereum", "ETH", MAINNET_RPC_URL, "https://etherscan.io/tx/",
                     MAINNET_ID));
-            put(C4EI_MAIN_ID, new NetworkInfo("C4EI (C4EI)", "C4EI", C4EI_MAIN_RPC_URL, "https://exp.c4ei.net/smart/tx/",
+            put(C4EI_MAIN_ID, new NetworkInfo("C4ei.net (C4EI)", "C4EI", C4EI_MAIN_RPC_URL, "https://exp.c4ei.net/smart/tx/",
                     C4EI_MAIN_ID));
             put(BINANCE_MAIN_ID, new NetworkInfo("Binance (BSC)", "BNB", BINANCE_MAIN_RPC_URL, "https://explorer.binance.org/smart/tx/",
                     BINANCE_MAIN_ID));
