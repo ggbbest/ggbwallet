@@ -27,7 +27,7 @@ public class CustomViewSettings
             // new TokenInfo(String TokenAddress, String TokenName, String TokenSymbol, int TokenDecimals, boolean isEnabled, int ChainId)
             //new TokenInfo("0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48", "USD Coin", "USDC", 6, true, EthereumNetworkBase.MAINNET_ID),
             //new TokenInfo("0x6C8c6b02E7b2BE14d4fA6022Dfd6d75921D90E4E", "Compound BAT", "CBAT", 8, true, EthereumNetworkBase.MAINNET_ID)
-            new TokenInfo("0x9655f46E960854fb07FEc3BD52ebB6cd872d4c81", "CAR", "CAR", 18, true, C4EI_MAIN_ID)
+            new TokenInfo("0x9655f46E960854fb07FEc3BD52ebB6cd872d4c81", "CAR", "CAR", 9, true, C4EI_MAIN_ID)
             ,new TokenInfo("0x09bF704cA9405A702fc1Cd76331947c19630D6Cc", "EAT", "EAT", 9, true, C4EI_MAIN_ID)
             ,new TokenInfo("0x368aB5E3330746974a8e221F29ef8a71eC074242", "GoodGameBe", "GGB", 18, true, BINANCE_MAIN_ID)
             ,new TokenInfo("0xF99aCcabD9121F9E584fBae833D84d25B5b97B6b", "Citi", "CITI", 9, true, BINANCE_MAIN_ID)
