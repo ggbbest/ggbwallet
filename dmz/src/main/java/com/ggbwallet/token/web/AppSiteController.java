@@ -98,7 +98,7 @@ public class AppSiteController implements AttributeInterface
 
     @GetMapping("/")
     public RedirectView home(RedirectAttributes attributes){
-        return new RedirectView("http://citypay.org");
+        return new RedirectView("https://trade.c4ei.net");
     }
 
     @GetMapping(value = "/{UniversalLink}")

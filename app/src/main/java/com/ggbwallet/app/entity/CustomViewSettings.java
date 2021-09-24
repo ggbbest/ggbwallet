@@ -30,6 +30,7 @@ public class CustomViewSettings
             ,new TokenInfo("0x368aB5E3330746974a8e221F29ef8a71eC074242", "GoodGameBe", "GGB", 18, true, BINANCE_MAIN_ID)
             ,new TokenInfo("0xF99aCcabD9121F9E584fBae833D84d25B5b97B6b", "Citi", "CITI", 9, true, BINANCE_MAIN_ID)
             ,new TokenInfo("0x0F3A4B199211b14Ed334F87Ef5acEA13Aba330A5", "CitypayOrg", "CTP", 18, true, BINANCE_MAIN_ID)
+            ,new TokenInfo("0x49f6f44f6af0e93be1598d7b1940c205f384b1b7", "GGB ETH", "GGB", 18, true, MAINNET_ID)
     );
 
     //List of chains that wallet can show

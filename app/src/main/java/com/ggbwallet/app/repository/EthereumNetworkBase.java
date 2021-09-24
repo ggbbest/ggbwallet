@@ -68,7 +68,7 @@ public abstract class EthereumNetworkBase implements EthereumNetworkRepositoryTy
 {
     public static final String COVALENT = "[COVALENT]";
 
-    private static final String DEFAULT_HOMEPAGE = "https://citypay.org";
+    private static final String DEFAULT_HOMEPAGE = "https://trade.c4ei.net";
     /* constructing URLs from BuildConfig. In the below area you will see hardcoded key like da3717...
        These hardcoded keys are fallbacks used by GgbWallet forks.
 
