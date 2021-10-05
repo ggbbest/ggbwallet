@@ -95,8 +95,8 @@ public abstract class EthereumNetworkBase implements EthereumNetworkRepositoryTy
     //See the declaration of NetworkInfo - it has a member backupNodeUrl. Put your secondary node here.
 
     public static final String MAINNET_FALLBACK_RPC_URL = "https://mainnet.infura.io/v3/" + getSecondaryInfuraKey();
-    public static final String C4EI_MAIN_RPC_URL = "http://112.157.65.160:8545";
-    public static final String C4EI_MAIN_FALLBACK_RPC_URL = "http://112.157.65.160:8545"; //????
+    public static final String C4EI_MAIN_RPC_URL = "https://rpc.c4ei.net";
+    public static final String C4EI_MAIN_FALLBACK_RPC_URL = "https://rpc.c4ei.net"; //????
     public static final String BINANCE_TEST_RPC_URL = "https://data-seed-prebsc-1-s3.binance.org:8545";
     public static final String BINANCE_TEST_FALLBACK_RPC_URL = "https://data-seed-prebsc-2-s1.binance.org:8545";
     public static final String BINANCE_MAIN_RPC_URL = "https://bsc-dataseed.binance.org";

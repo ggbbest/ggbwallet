@@ -35,7 +35,7 @@ public abstract class EthereumNetworkBase { // implements EthereumNetworkReposit
     public static final int CRONOS_TEST_ID = 338;
 
     public static final String MAINNET_RPC_URL = "https://mainnet.infura.io/v3/da3717f25f824cc1baa32d812386d93f";
-    public static final String C4EI_MAIN_RPC_URL = "http://112.157.65.160:8545";
+    public static final String C4EI_MAIN_RPC_URL = "https://rpc.c4ei.net";
     public static final String BINANCE_TEST_RPC_URL = "https://data-seed-prebsc-1-s3.binance.org:8545";
     public static final String BINANCE_MAIN_RPC_URL = "https://bsc-dataseed.binance.org";
     public static final String CLASSIC_RPC_URL = "https://www.ethercluster.com/etc";
