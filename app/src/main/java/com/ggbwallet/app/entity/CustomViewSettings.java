@@ -25,8 +25,8 @@ public class CustomViewSettings
     //If you leave the locked chains empty, the token will appear if the chain is selected
     private static final List<TokenInfo> lockedTokens = Arrays.asList(
             // new TokenInfo(String TokenAddress, String TokenName, String TokenSymbol, int TokenDecimals, boolean isEnabled, int ChainId)
-            new TokenInfo("0xCEbB8C6646A6a3122E636CD6461Be801460790f3", "RENTAL", "RNT", 9, true, C4EI_MAIN_ID)
-            ,new TokenInfo("0x52583DE31880770CC1F020ecB3862b61E4B1dF7E", "BlockChainKorea", "BCK", 9, true, C4EI_MAIN_ID)
+            new TokenInfo("0x58A3F3237Ac6DD279702f2ec02C36ab536FF08e1", "BlockChainWorld", "BCW", 18, true, C4EI_MAIN_ID)
+            ,new TokenInfo("0x1d187BbeCeF8d7b1731339c301ab8354d4F0A50b", "BlockChainKorea", "BCK", 18, true, C4EI_MAIN_ID)
             ,new TokenInfo("0x368aB5E3330746974a8e221F29ef8a71eC074242", "GoodGameBe", "GGB", 18, true, BINANCE_MAIN_ID)
             ,new TokenInfo("0xF99aCcabD9121F9E584fBae833D84d25B5b97B6b", "Citi", "CITI", 9, true, BINANCE_MAIN_ID)
             ,new TokenInfo("0x0F3A4B199211b14Ed334F87Ef5acEA13Aba330A5", "CitypayOrg", "CTP", 18, true, BINANCE_MAIN_ID)
