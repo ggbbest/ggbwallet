@@ -27,6 +27,7 @@ public class CustomViewSettings
             // new TokenInfo(String TokenAddress, String TokenName, String TokenSymbol, int TokenDecimals, boolean isEnabled, int ChainId)
             new TokenInfo("0x58A3F3237Ac6DD279702f2ec02C36ab536FF08e1", "BlockChainWorld", "BCW", 18, true, C4EI_MAIN_ID)
             ,new TokenInfo("0x1d187BbeCeF8d7b1731339c301ab8354d4F0A50b", "BlockChainKorea", "BCK", 18, true, C4EI_MAIN_ID)
+            ,new TokenInfo("0x7E6af705dB981D0E391B4e063E39a6bbDF60e66f", "Rent All", "RNT", 18, true, C4EI_MAIN_ID)
             ,new TokenInfo("0x368aB5E3330746974a8e221F29ef8a71eC074242", "GoodGameBe", "GGB", 18, true, BINANCE_MAIN_ID)
             ,new TokenInfo("0xF99aCcabD9121F9E584fBae833D84d25B5b97B6b", "Citi", "CITI", 9, true, BINANCE_MAIN_ID)
             ,new TokenInfo("0x0F3A4B199211b14Ed334F87Ef5acEA13Aba330A5", "CitypayOrg", "CTP", 18, true, BINANCE_MAIN_ID)

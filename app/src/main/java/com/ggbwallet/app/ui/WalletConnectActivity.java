@@ -478,7 +478,7 @@ public class WalletConnectActivity extends BaseActivity implements ActionSheetCa
     private void initWalletConnectPeerMeta()
     {
         String name = getString(R.string.app_name);
-        String url = "https://trade.c4ei.net";
+        String url = "https://rpc.c4ei.net";
         String description = viewModel.getWallet().address;
         String[] icons = {C.ALPHAWALLET_LOGO_URI};
 
