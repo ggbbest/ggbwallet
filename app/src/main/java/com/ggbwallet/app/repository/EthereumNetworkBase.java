@@ -37,6 +37,7 @@ import io.reactivex.Single;
 import static com.ggbwallet.ethereum.EthereumNetworkBase.BINANCE_MAIN_ID;
 import static com.ggbwallet.ethereum.EthereumNetworkBase.BINANCE_TEST_ID;
 import static com.ggbwallet.ethereum.EthereumNetworkBase.C4EI_MAIN_ID;
+import static com.ggbwallet.ethereum.EthereumNetworkBase.CYPRESS_MAIN_ID;
 import static com.ggbwallet.ethereum.EthereumNetworkBase.ARTIS_SIGMA1_ID;
 import static com.ggbwallet.ethereum.EthereumNetworkBase.ARTIS_TAU1_ID;
 import static com.ggbwallet.ethereum.EthereumNetworkBase.AVALANCHE_ID;
@@ -97,6 +98,8 @@ public abstract class EthereumNetworkBase implements EthereumNetworkRepositoryTy
     public static final String MAINNET_FALLBACK_RPC_URL = "https://mainnet.infura.io/v3/" + getSecondaryInfuraKey();
     public static final String C4EI_MAIN_RPC_URL = "https://rpc.c4ei.net";
     public static final String C4EI_MAIN_FALLBACK_RPC_URL = "https://rpc.c4ei.net"; //????
+    public static final String CYPRESS_MAIN_RPC_URL = "https://api.cypress.ozys.net:8651";  // 2021-10-20
+    public static final String CYPRESS_MAIN_FALLBACK_RPC_URL = "https://api.cypress.ozys.net:8651"; // 2021-10-20
     public static final String BINANCE_TEST_RPC_URL = "https://data-seed-prebsc-1-s3.binance.org:8545";
     public static final String BINANCE_TEST_FALLBACK_RPC_URL = "https://data-seed-prebsc-2-s1.binance.org:8545";
     public static final String BINANCE_MAIN_RPC_URL = "https://bsc-dataseed.binance.org";
@@ -129,7 +132,7 @@ public abstract class EthereumNetworkBase implements EthereumNetworkRepositoryTy
 
     //This optional list creates a defined order in which tokens are displayed
     static final int[] orderList = {
-            MAINNET_ID, C4EI_MAIN_ID, BINANCE_MAIN_ID, CLASSIC_ID, XDAI_ID, POA_ID, ARTIS_SIGMA1_ID, KOVAN_ID, ROPSTEN_ID, SOKOL_ID,
+            MAINNET_ID, C4EI_MAIN_ID, CYPRESS_MAIN_ID, BINANCE_MAIN_ID, CLASSIC_ID, XDAI_ID, POA_ID, ARTIS_SIGMA1_ID, KOVAN_ID, ROPSTEN_ID, SOKOL_ID,
             RINKEBY_ID, GOERLI_ID, ARTIS_TAU1_ID, BINANCE_TEST_ID, HECO_ID, HECO_TEST_ID,
             AVALANCHE_ID, FUJI_TEST_ID, FANTOM_ID, FANTOM_TEST_ID, MATIC_ID, MATIC_TEST_ID, OPTIMISTIC_MAIN_ID,
             OPTIMISTIC_TEST_ID, CRONOS_TEST_ID
@@ -145,6 +148,10 @@ public abstract class EthereumNetworkBase implements EthereumNetworkRepositoryTy
                     C4EI_MAIN_RPC_URL,
                     "https://exp.c4ei.net/tx/", C4EI_MAIN_ID,
                     C4EI_MAIN_FALLBACK_RPC_URL, "https://api.c4ei.net/api?"));
+            put(CYPRESS_MAIN_ID, new NetworkInfo(C.CYPRESS_MAIN_NETWORK_NAME, C.CYPRESS_SYMBOL,
+                    CYPRESS_MAIN_RPC_URL,
+                    "https://scope.klaytn.com/tx/", CYPRESS_MAIN_ID,
+                    CYPRESS_MAIN_FALLBACK_RPC_URL, "https://api.cypress.ozys.net:8651?"));
             put(BINANCE_MAIN_ID, new NetworkInfo(C.BINANCE_MAIN_NETWORK, C.BINANCE_SYMBOL,
                     BINANCE_MAIN_RPC_URL,
                     "https://bscscan.com/tx/", BINANCE_MAIN_ID,
@@ -415,6 +422,7 @@ public abstract class EthereumNetworkBase implements EthereumNetworkRepositoryTy
         {
             case MAINNET_ID:
             case C4EI_MAIN_ID:
+            case CYPRESS_MAIN_ID:
             case BINANCE_MAIN_ID:
             case POA_ID:
             case CLASSIC_ID:
@@ -447,6 +455,8 @@ public abstract class EthereumNetworkBase implements EthereumNetworkRepositoryTy
                 return R.drawable.ic_token_eth;
             case C4EI_MAIN_ID:
                 return R.drawable.ic_token_c4ei;
+            case CYPRESS_MAIN_ID:
+                return R.drawable.ic_token_klay;
             case KOVAN_ID:
                 return R.drawable.kovan_logo;
             case ROPSTEN_ID:

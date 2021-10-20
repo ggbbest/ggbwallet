@@ -10,6 +10,7 @@ import java.util.Map;
 public abstract class EthereumNetworkBase { // implements EthereumNetworkRepositoryType
     public static final int MAINNET_ID = 1;
     public static final int C4EI_MAIN_ID = 21004;
+    public static final int CYPRESS_MAIN_ID = 8217;
     public static final int BINANCE_MAIN_ID = 56;
     public static final int BINANCE_TEST_ID = 97;
     public static final int CLASSIC_ID = 61;
@@ -36,6 +37,7 @@ public abstract class EthereumNetworkBase { // implements EthereumNetworkReposit
 
     public static final String MAINNET_RPC_URL = "https://mainnet.infura.io/v3/da3717f25f824cc1baa32d812386d93f";
     public static final String C4EI_MAIN_RPC_URL = "https://rpc.c4ei.net";
+    public static final String CYPRESS_MAIN_RPC_URL = "https://api.cypress.ozys.net:8651";
     public static final String BINANCE_TEST_RPC_URL = "https://data-seed-prebsc-1-s3.binance.org:8545";
     public static final String BINANCE_MAIN_RPC_URL = "https://bsc-dataseed.binance.org";
     public static final String CLASSIC_RPC_URL = "https://www.ethercluster.com/etc";
@@ -64,8 +66,10 @@ public abstract class EthereumNetworkBase { // implements EthereumNetworkReposit
         {
             put(MAINNET_ID, new NetworkInfo("Ethereum", "ETH", MAINNET_RPC_URL, "https://etherscan.io/tx/",
                     MAINNET_ID));
-            put(C4EI_MAIN_ID, new NetworkInfo("C4ei.net (C4EI)", "C4EI", C4EI_MAIN_RPC_URL, "https://exp.c4ei.net/smart/tx/",
+            put(C4EI_MAIN_ID, new NetworkInfo("C4ei.net (C4EI)", "C4EI", C4EI_MAIN_RPC_URL, "https://exp.c4ei.net/tx/",
                     C4EI_MAIN_ID));
+            put(CYPRESS_MAIN_ID, new NetworkInfo("Cypress", "KLAY", CYPRESS_MAIN_RPC_URL, "https://scope.klaytn.com/tx/",
+                    CYPRESS_MAIN_ID));
             put(BINANCE_MAIN_ID, new NetworkInfo("Binance (BSC)", "BNB", BINANCE_MAIN_RPC_URL, "https://explorer.binance.org/smart/tx/",
                     BINANCE_MAIN_ID));
             put(BINANCE_TEST_ID, new NetworkInfo("BSC TestNet (Test)", "BNB", BINANCE_TEST_RPC_URL, "https://explorer.binance.org/smart-testnet/tx/",

@@ -21,6 +21,7 @@ public abstract class C {
 
     public static final String ETHEREUM_NETWORK_NAME = "Ethereum";
     public static final String C4EI_MAIN_NETWORK_NAME = "c4ei.net";
+    public static final String CYPRESS_MAIN_NETWORK_NAME = "Cypress";
     public static final String CLASSIC_NETWORK_NAME = "Ethereum Classic";
     public static final String BINANCE_TEST_NETWORK = "BSC TestNet";
     public static final String BINANCE_MAIN_NETWORK = "Binance (BSC)";
@@ -52,6 +53,7 @@ public abstract class C {
     public static final String ARTIS_SIGMA_TICKER = "artis";
     public static final String BINANCE_TICKER = "binance";
     public static final String C4EI_TICKER = "c4ei";
+    public static final String CYPRESS_TICKER = "cypress";
 
     public static final String ETHEREUM_TICKER = "ethereum";
     public static final String POA_TICKER = "poa";
@@ -66,6 +68,7 @@ public abstract class C {
     public static final String ARTIS_TAU1_SYMBOL = "ATS";
     public static final String BINANCE_SYMBOL = "BNB";
     public static final String C4EI_SYMBOL = "C4EI";
+    public static final String CYPRESS_SYMBOL = "KLAY";
     public static final String HECO_SYMBOL = "HT";
     public static final String FANTOM_SYMBOL = "FTM";
     public static final String AVALANCHE_SYMBOL = "AVAX";

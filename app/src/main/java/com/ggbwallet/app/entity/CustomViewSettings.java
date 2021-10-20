@@ -8,9 +8,9 @@ import com.ggbwallet.ethereum.EthereumNetworkBase;
 import java.util.Arrays;
 import java.util.List;
 
-//import static com.ggbwallet.ethereum.EthereumNetworkBase.C4EI_MAIN_ID;
 import static com.ggbwallet.ethereum.EthereumNetworkBase.BINANCE_MAIN_ID;
 import static com.ggbwallet.ethereum.EthereumNetworkBase.C4EI_MAIN_ID;
+import static com.ggbwallet.ethereum.EthereumNetworkBase.CYPRESS_MAIN_ID;
 import static com.ggbwallet.ethereum.EthereumNetworkBase.MAINNET_ID;
 
 public class CustomViewSettings
@@ -25,13 +25,14 @@ public class CustomViewSettings
     //If you leave the locked chains empty, the token will appear if the chain is selected
     private static final List<TokenInfo> lockedTokens = Arrays.asList(
             // new TokenInfo(String TokenAddress, String TokenName, String TokenSymbol, int TokenDecimals, boolean isEnabled, int ChainId)
-            new TokenInfo("0x58A3F3237Ac6DD279702f2ec02C36ab536FF08e1", "BlockChainWorld", "BCW", 18, true, C4EI_MAIN_ID)
-            ,new TokenInfo("0x1d187BbeCeF8d7b1731339c301ab8354d4F0A50b", "BlockChainKorea", "BCK", 18, true, C4EI_MAIN_ID)
+//            new TokenInfo("0x58A3F3237Ac6DD279702f2ec02C36ab536FF08e1", "BlockChainWorld", "BCW", 18, true, C4EI_MAIN_ID)
+            new TokenInfo("0x1d187BbeCeF8d7b1731339c301ab8354d4F0A50b", "BlockChainKorea", "BCK", 18, true, C4EI_MAIN_ID)
             ,new TokenInfo("0x7E6af705dB981D0E391B4e063E39a6bbDF60e66f", "Rent All", "RNT", 18, true, C4EI_MAIN_ID)
             ,new TokenInfo("0x368aB5E3330746974a8e221F29ef8a71eC074242", "GoodGameBe", "GGB", 18, true, BINANCE_MAIN_ID)
             ,new TokenInfo("0xF99aCcabD9121F9E584fBae833D84d25B5b97B6b", "Citi", "CITI", 9, true, BINANCE_MAIN_ID)
             ,new TokenInfo("0x0F3A4B199211b14Ed334F87Ef5acEA13Aba330A5", "CitypayOrg", "CTP", 18, true, BINANCE_MAIN_ID)
             ,new TokenInfo("0x49f6f44f6af0e93be1598d7b1940c205f384b1b7", "GGB ETH", "GGB", 18, true, MAINNET_ID)
+            ,new TokenInfo("0x18814b01b5CC76F7043E10fd268cc4364dF47dA0", "c4ei.net 4 klay", "CEIK", 8, true, CYPRESS_MAIN_ID)
     );
 
     //List of chains that wallet can show
@@ -44,6 +45,7 @@ public class CustomViewSettings
             //EthereumNetworkBase.GOERLI_ID
             EthereumNetworkBase.MAINNET_ID,
             EthereumNetworkBase.C4EI_MAIN_ID,
+            EthereumNetworkBase.CYPRESS_MAIN_ID,
             EthereumNetworkBase.BINANCE_MAIN_ID
     );
 
